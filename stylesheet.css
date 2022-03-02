@@ -1,0 +1,187 @@
+html:focus {
+    background-color: pink;
+}
+
+body {
+    margin: 0 auto;
+    background-color: black;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+img {
+    height: 400px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.intro_container {
+position: relative;
+text-align: center;
+background-color: rgb(24, 24, 24);
+text-align: center;
+margin: 2%;
+padding: 2%;
+}
+
+.intro_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  
+}
+
+
+.columns  {
+    display: grid;
+    gap: 3em;
+    margin: 0.5em;
+}
+
+@media (min-width:1200px) {
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 20%;
+        
+
+    }
+    .intro_text {
+        text-align: center;
+    }
+}
+
+.card {
+    background-color: grey;
+    padding: 1em;
+    border: 1px solid rgb(190, 226, 238);
+    border-radius: 5px;
+    min-height: 420px;
+    text-align: center;
+}
+
+@media(min-width:1200px) {
+    .card {
+        min-height: 500px;
+    }
+}
+
+.card:hover {
+    background-color: rgb(70, 83, 83);
+    curser: pointer;
+}
+
+.card_title {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+
+.card_title_h4 {
+    font-size: 1.2em;
+    color: white;
+    margin-top: 0;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    }
+
+.tag {
+    background-color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+
+}
+
+
+.ion-icon {
+    width: 200px;
+    height: 200px;
+    color: rgb(199, 196, 196);
+}
+
+
+
+/* Social sharing links */
+
+.social-links {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid black;
+
+
+}
+
+@media(min-width:1100px) {
+    .social-links {
+            
+    }
+}
+
+
+.social-btn {
+	cursor: pointer;
+    padding: 1em;
+	height: 50px;
+	width: 400px;
+	font-family: 'Titillium Web', sans-serif;
+	color: #333;
+	border-radius: 10px;
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	background: white;
+	margin: 5px;
+	transition: 1s;
+    
+}
+
+.social-btn span {
+	width: 0px;
+	overflow: hidden;
+	transition: 1s;
+	text-align: center;
+}
+
+.social-btn:hover {
+	width: 250px;
+	border-radius: 5px;
+}
+
+.social-btn:hover span {
+	padding: 2px;
+	width: max-content;
+}
+
+#twitter svg {
+	fill: #1da1f2;
+}
+
+#linkedin svg {
+	fill: #0e76a8;
+}
+
+#github {
+	fill: #333;
+}
+
+
+
+/* END : Social sharing links */
